@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Credencial.cs" />
+    <Compile Include="Credenciales.cs" />
     <Compile Include="Notas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
