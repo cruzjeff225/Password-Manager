@@ -85,6 +85,38 @@
             left: 50%;
             transform: translateX(-50%);
         }
+        /* Estilos  del formulario  */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #374151;
+            border-radius: 8px;
+            color: white;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: none;
+            border-radius: 4px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -98,8 +130,20 @@
         <a href="#"><i class="fas fa-cog"></i> Configuración</a>
     </div>
     <div class="content">
-        <h2>Bienvenido a tu gestor de contraseñas</h2>
-        <p>Selecciona una opción del menú para comenzar. ¡Tu seguridad es nuestra prioridad!</p>
+        <!-- Formulario de registro de credenciales  -->
+        <div class="form-container">
+            <h2>Registro de Credenciales</h2>
+            <form id="form1" runat="server">
+                <label for="txtPlataforma">Plataforma</label>
+                <asp:TextBox ID="txtPlataforma" runat="server" placeholder="Ej: Facebook"></asp:TextBox>
+                <label for="txtUsuario">Usuario</label>
+                <asp:TextBox ID="txtUsuario" runat="server" placeholder="Ej: usuario@example.com"></asp:TextBox>
+                <label for="txtContraseña">Contraseña</label>
+                <asp:TextBox ID="txtContraseña" runat="server" TextMode="Password"></asp:TextBox>
+                <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click" />
+                <asp:Label ID="lblMensaje" runat="server" CssClass="text-danger"></asp:Label>
+            </form>
+        </div>
     </div>
     <div class="footer">
         <p>&copy; 2025 Password Manager. Todos los derechos reservados.</p>
