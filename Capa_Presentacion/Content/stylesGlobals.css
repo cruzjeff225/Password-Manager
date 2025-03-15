@@ -94,3 +94,8 @@
             color: #7f8c8d;
             margin-top: 20px;
         }
+
+        .no-link {
+            text-decoration: none;
+            color: inherit;
+        }
