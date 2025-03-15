@@ -1,0 +1,129 @@
+﻿
+
+.login-form {
+    background-color: #F5F3F5;
+    padding: 100px;
+}
+
+    .login-form form {
+        background-color: white;
+        margin: auto;
+        border: none;
+        max-width: 550px;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    .login-form .form-name {
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 30px;
+        color: black;
+    }
+
+    .login-form .txt {
+        justify-self: center;
+        padding: 20px;
+    }
+
+    .login-form .item {
+        border-radius: 20px;
+        max-width: 400px;
+        border: none;
+        justify-self: center;
+        margin-bottom: 25px;
+        padding: 10px 10px;
+        background-color: #F5F3F5;
+    }
+
+.btn {
+    display: block;
+    width: 50%;
+    border: none;
+    justify-self: center;
+    background-color: #274690;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+    .btn:hover {
+        text-decoration: none;
+        background-color: #576CA8;
+        opacity: 0.8;
+    }
+
+.title {
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.show-data {
+    background-color: white;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin-top: 30px;
+}
+
+.table {
+    max-width: 1000px;
+    align-self: center;
+    margin: auto;
+    border: none;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.title h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.show-data .item {
+    background-color: blue;
+    max-width: 400px;
+}
+
+.show-data .row {
+    text-align: left;
+    padding: 5px 20px;
+}
+
+.placeholder-cursiva::placeholder {
+    font-style: italic;
+}
+
+.btn-add {
+    display: block;
+    width: 200px;
+    border: none;
+    justify-self: left;
+    background-color: #274690;
+    border-radius: 20px;
+}
+
+td a {
+    color: #274690;
+}
+
+.table tbody tr {
+    border-bottom: #454851;
+}
+
+.table thead th {
+    border-bottom: #454851;
+}
+
+.btn-logout {
+    display: block;
+    width: 100px;
+    border: none;
+    justify-self: right;
+    background-color: #274690;
+    border-radius: 20px;
+    font-size: 10px;
+}

@@ -15,23 +15,5 @@ namespace Capa_Presentacion
 		{
 
 		}
-
-        protected void btnNew_Click(object sender, EventArgs e)
-        {
-			string Titulo = txtTitulo.Text;
-			string Descripcion = txtDescripcion.Text;
-			DateTime fechaCreacion = DateTime.Now;
-
-
-			bool exito = NegocioNotas.insertarNota(Titulo, Descripcion, fechaCreacion);
-			if (exito) 
-			{
-				Response.Write("<script>alert('Nota agregada con éxito!';</script>)");
-			}
-            else
-            {
-                 Response.Write("<script>alert('Error al agregar nota';</script>)");
-            }
-        }
     }
 }

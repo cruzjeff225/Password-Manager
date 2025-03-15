@@ -17,9 +17,9 @@ namespace Capa_Negocio
             return credencialesN.obtenerCredenciales();
         }
 
-        public bool insertarCredenciales(string Plataforma, string Usuario, string Contraseña, int idUsuario)
+        public bool insertarCredenciales(string Plataforma, string Usuario, string Contraseña)
         {
-            return credencialesN.insertarCredenciales(Plataforma, Usuario, Contraseña, idUsuario);
+            return credencialesN.insertarCredenciales(Plataforma, Usuario, Contraseña);
         }
 
         public bool actualizarCredenciales(int idCredencial, string Plataforma, string Usuario, string Contraseña) 
