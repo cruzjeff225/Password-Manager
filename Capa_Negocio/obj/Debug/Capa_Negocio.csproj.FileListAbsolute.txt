@@ -11,3 +11,7 @@ C:\Users\Jefferson Cruz\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.csp
 C:\Users\Jefferson Cruz\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
 C:\Users\Jefferson Cruz\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.dll
 C:\Users\Jefferson Cruz\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+C:\Users\melis\OneDrive\Desktop\Password-Manager\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+C:\Users\melis\OneDrive\Desktop\Password-Manager\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\melis\OneDrive\Desktop\Password-Manager\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\melis\OneDrive\Desktop\Password-Manager\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.pdb

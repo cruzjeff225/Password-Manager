@@ -183,3 +183,7 @@ C:\Users\Jefferson Cruz\Password-Manager\Capa_Presentacion\obj\Debug\Capa_Presen
 C:\Users\Jefferson Cruz\Password-Manager\Capa_Presentacion\obj\Debug\Capa_Pre.6F14CCC0.Up2Date
 C:\Users\Jefferson Cruz\Password-Manager\Capa_Presentacion\obj\Debug\Capa_Presentacion.dll
 C:\Users\Jefferson Cruz\Password-Manager\Capa_Presentacion\obj\Debug\Capa_Presentacion.pdb
+C:\Users\melis\OneDrive\Desktop\Password-Manager\Password-Manager\Capa_Presentacion\obj\Debug\Capa_Presentacion.csproj.AssemblyReference.cache
+C:\Users\melis\OneDrive\Desktop\Password-Manager\Password-Manager\Capa_Presentacion\obj\Debug\Capa_Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\melis\OneDrive\Desktop\Password-Manager\Password-Manager\Capa_Presentacion\obj\Debug\Capa_Presentacion.dll
+C:\Users\melis\OneDrive\Desktop\Password-Manager\Password-Manager\Capa_Presentacion\obj\Debug\Capa_Presentacion.pdb
