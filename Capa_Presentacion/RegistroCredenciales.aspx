@@ -22,6 +22,12 @@
         <h2>Bienvenido a tu gestor de contraseñas</h2>
         <p>Selecciona una opción del menú para comenzar. ¡Tu seguridad es nuestra prioridad!</p>
         <div class="container">
+            <div class="card">
+                <a href="Credenciales.aspx?plataforma=Airbnb">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Airbnb_Logo_B%C3%A9lo.svg" alt="Airbnb">
+                    <h5>Airbnb</h5>
+                </a>
+            </div>
             <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Airbnb_Logo_B%C3%A9lo.svg" alt="Airbnb"><h5>Airbnb</h5></div>
             <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon"><h5>Amazon</h5></div>
             <div class="card"><img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Best_Buy_Logo.svg" alt="Best Buy"><h5>Best Buy</h5></div>

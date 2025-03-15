@@ -31,18 +31,17 @@ namespace Capa_Datos
             return dt;
         }
 
-        public bool insertarCredenciales(string Plataforma, string Usuario, string Contraseña, int idUsuario) 
+        public bool insertarCredenciales(string Plataforma, string Usuario, string Contraseña) 
         {
             using (SqlConnection con = new SqlConnection(conexionString))
             {
                 con.Open();
 
-                using (SqlCommand cmd = new SqlCommand("INSERT INTO Credenciales (Plataforma, Usuario, Contraseña, idUsuario) VALUES (@Plataforma, @Usuario, @Contraseña, @idUsuario)", con))
+                using (SqlCommand cmd = new SqlCommand("INSERT INTO Credenciales (Plataforma, Usuario, Contraseña) VALUES (@Plataforma, @Usuario, @Contraseña)", con))
                 {
                     cmd.Parameters.AddWithValue("@Plataforma", Plataforma);
                     cmd.Parameters.AddWithValue("@Usuario", Usuario);
                     cmd.Parameters.AddWithValue("@Contraseña", Contraseña);
-                    cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
 
                     int filasAfectadas = cmd.ExecuteNonQuery();
                     return filasAfectadas > 0;

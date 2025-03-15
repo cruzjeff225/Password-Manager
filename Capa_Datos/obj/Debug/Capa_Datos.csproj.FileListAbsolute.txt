@@ -4,3 +4,9 @@ C:\Users\HP\Source\Repos\Password-Manager\Capa_Datos\obj\Debug\Capa_Datos.csproj
 C:\Users\HP\Source\Repos\Password-Manager\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
 C:\Users\HP\Source\Repos\Password-Manager\Capa_Datos\obj\Debug\Capa_Datos.dll
 C:\Users\HP\Source\Repos\Password-Manager\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\Jefferson Cruz\Password-Manager\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\Jefferson Cruz\Password-Manager\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\Jefferson Cruz\Password-Manager\Capa_Datos\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+C:\Users\Jefferson Cruz\Password-Manager\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Jefferson Cruz\Password-Manager\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\Jefferson Cruz\Password-Manager\Capa_Datos\obj\Debug\Capa_Datos.pdb
