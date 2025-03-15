@@ -67,7 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\styles.css" />
+    <Content Include="Content\stylesGlobals.css" />
     <Content Include="Global.asax" />
+    <Content Include="newNote.aspx" />
     <Content Include="Web.config" />
     <Content Include="RegistroCredenciales.aspx" />
     <Content Include="RegistroNotas.aspx" />
@@ -75,6 +78,13 @@
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="newNote.aspx.cs">
+      <DependentUpon>newNote.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="newNote.aspx.designer.cs">
+      <DependentUpon>newNote.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegistroCredenciales.aspx.cs">
@@ -103,7 +113,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
