@@ -22,10 +22,11 @@ namespace Capa_Negocio
             return credencialesN.insertarCredenciales(Plataforma, Usuario, Contraseña);
         }
 
-        public bool actualizarCredenciales(int idCredencial, string Plataforma, string Usuario, string Contraseña) 
+        public bool actualizarCredenciales(int idCredencial, string Plataforma, string Usuario, string Contraseña)
         {
             return credencialesN.actualizarCredenciales(idCredencial, Plataforma, Usuario, Contraseña);
         }
+
 
         public bool eliminarCredenciales(int idCredencial)
         {
