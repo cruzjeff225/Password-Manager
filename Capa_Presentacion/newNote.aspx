@@ -14,10 +14,9 @@
     <form id="form1" runat="server">
         <div class="sidebar">
             <h4>Password Manager</h4>
-            <a href="#" class="active"><i class="fas fa-plus-circle"></i>Agregar cuenta</a>
+            <a href="#"><i class="fas fa-plus-circle"></i>Agregar cuenta</a>
             <a href="#"><i class="fas fa-user"></i>Mis cuentas</a>
-            <a href="#"><i class="fas fa-sticky-note"></i>Agregar nota</a>
-            <a href=""><i class="fas fa-sticky-note"></i>Mis notas</a>
+            <a href="#" class="active"><i class="fas fa-sticky-note"></i>Notas</a>
             <a href="#"><i class="fas fa-credit-card"></i>Tarjetas de crédito - débito</a>
             <a href="#"><i class="fas fa-cog"></i>Configuración</a>
         </div>
@@ -35,12 +34,46 @@
                 </form>
                 <br />
 
-                <asp:Repeater ID="repeaterNotas" runat="server">
+                <asp:Repeater ID="repeaterNotas" runat="server" OnItemCommand="repeaterNotas_ItemCommand">
                     <ItemTemplate>
                         <div class="sticky-note">
-                            <h3><%# Eval("Titulo") %></h3>
-                            <p><%# Eval("Descripcion") %></p>
+                            <asp:Label ID="lblTitulo" runat="server" Text='<%# Eval("Titulo") %>' Visible='<%# !(bool)Eval("Editando") %>'></asp:Label>
+                            <asp:TextBox ID="txtTitulo" runat="server" Text='<%# Eval("Titulo") %>' Visible='<%# Eval("Editando") %>' CssClass="input sticky-note-input"></asp:TextBox>
+                            <br />
+                            <asp:Label ID="lblDescripcion" runat="server" Text='<%# Eval("Descripcion") %>' Visible='<%# !(bool)Eval("Editando") %>'></asp:Label>
+                            <asp:TextBox ID="txtDescripcion" runat="server" TextMode="MultiLine" Text='<%# Eval("Descripcion") %>' Visible='<%# Eval("Editando") %>' CssClass="input sticky-note-textarea"></asp:TextBox>
+
                             <small><%# Eval("fechaCreacion", "{0:dd/MM/yyyy}") %></small>
+
+                            <asp:LinkButton ID="btnEditar" runat="server"
+                                CommandName="Editar"
+                                CommandArgument='<%# Eval("idNota") %>'
+                                CssClass="btn btn-link text-danger">
+                <i class="fas fa-edit"></i>
+                            </asp:LinkButton>
+
+                            <asp:LinkButton ID="btnGuardar" runat="server"
+                                CommandName="Guardar"
+                                CommandArgument='<%# Eval("idNota") %>'
+                                CssClass="btn btn-link text-success"
+                                Visible='<%# Eval("Editando") %>'>
+                <i class="fa-solid fa-floppy-disk"></i></i>
+                            </asp:LinkButton>
+
+                            <asp:LinkButton ID="btnCancelar" runat="server"
+                                CommandName="Cancelar"
+                                CommandArgument='<%# Eval("idNota") %>'
+                                CssClass="btn btn-link text-danger"
+                                Visible='<%# Eval("Editando") %>'>
+                <i class="fa-solid fa-xmark"></i>
+                            </asp:LinkButton>
+
+                            <asp:LinkButton ID="btnEliminar" runat="server"
+                                CommandName="Eliminar"
+                                CommandArgument='<%# Eval("idNota") %>'
+                                CssClass="btn btn-link text-danger">
+                <i class="fas fa-trash"></i>
+                            </asp:LinkButton>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>

@@ -23,6 +23,11 @@ namespace Capa_Presentacion
 		private void CargarNotas()
 		{
 			DataTable dt = NegocioNotas.obtenerNotas();
+			dt.Columns.Add("Editando", typeof(bool));
+			foreach (DataRow row in dt.Rows)
+			{
+				row["Editando"] = false;
+			}
 
 			repeaterNotas.DataSource = dt;
 			repeaterNotas.DataBind();
@@ -44,5 +49,89 @@ namespace Capa_Presentacion
                 Response.Write("<script>alert('Error al agregar la nota')</script>");
             }
         }
+
+		protected void repeaterNotas_ItemCommand(object source, RepeaterCommandEventArgs e)
+		{
+			int idNota = Convert.ToInt32(e.CommandArgument);
+
+			switch (e.CommandName)
+			{
+				case "Editar":
+					HabilitarEdicion(idNota);
+					break;
+                case "Guardar":
+                    GuardarEdicion(idNota, e);
+                    break;
+                case "Cancelar":
+                    CancelarEdicion(idNota);
+                    break;
+                case "Eliminar":
+                    EliminarNota(idNota);
+                    break;
+            }
+		}
+
+        private void HabilitarEdicion(int idNota)
+        {
+            DataTable dt = NegocioNotas.obtenerNotas();
+            dt.Columns.Add("Editando", typeof(bool));
+
+            foreach (DataRow row in dt.Rows)
+            {
+                if ((int)row["idNota"] == idNota)
+                {
+                    row["Editando"] = true; // Activar modo edición
+                }
+                else
+                {
+                    row["Editando"] = false; // Desactivar modo edición para las demás notas
+                }
+            }
+            repeaterNotas.DataSource = dt;
+            repeaterNotas.DataBind();
+        }
+        private void GuardarEdicion(int idNota, RepeaterCommandEventArgs e)
+        {
+            string Titulo = ((TextBox)e.Item.FindControl("txtTitulo")).Text;
+            string Descripcion = ((TextBox)e.Item.FindControl("txtDescripcion")).Text;
+
+            if (NegocioNotas.actualizarNota(idNota, Titulo, Descripcion, DateTime.Now))
+            {
+                CargarNotas(); // Recargar las notas después de guardar
+            }
+            else
+            {
+                Response.Write("<script>alert('Error al actualizar la nota')</script>");
+            }
+        }
+
+        private void CancelarEdicion(int idNota)
+        {
+            DataTable dt = NegocioNotas.obtenerNotas();
+            dt.Columns.Add("Editando", typeof(bool));
+
+            foreach (DataRow row in dt.Rows)
+            {
+                if ((int)row["idNota"] == idNota)
+                {
+                    row["Editando"] = false; // Desactivar modo edición
+                }
+            }
+            repeaterNotas.DataSource = dt;
+            repeaterNotas.DataBind();
+        }
+
+        private void EliminarNota(int idNota)
+        {
+            if (NegocioNotas.eliminarNota(idNota))
+            {
+                CargarNotas(); // Recargar las notas después de eliminar
+            }
+            else
+            {
+                // Mostrar mensaje de error
+            }
+        }
+
     }
 }

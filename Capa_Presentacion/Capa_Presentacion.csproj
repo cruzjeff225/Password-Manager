@@ -75,7 +75,6 @@
     <Content Include="newNote.aspx" />
     <Content Include="Web.config" />
     <Content Include="RegistroCredenciales.aspx" />
-    <Content Include="RegistroNotas.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Credenciales.aspx.cs">
@@ -102,13 +101,6 @@
     </Compile>
     <Compile Include="RegistroCredenciales.aspx.designer.cs">
       <DependentUpon>RegistroCredenciales.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="RegistroNotas.aspx.cs">
-      <DependentUpon>RegistroNotas.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RegistroNotas.aspx.designer.cs">
-      <DependentUpon>RegistroNotas.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -1,55 +1,123 @@
-﻿.form-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #374151;
-    border-radius: 8px;
+﻿    .form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    }
+
+    h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    }
+
+    label {
+    font-weight: bold;
+    margin-top: 10px;
+    }
+
+    .input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    }
+
+    .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background: #3498db;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    }
+
+    .btn-primary:hover {
+        background: #2980b9;
+    }
+
+.sticky-note {
+    background: #34495e;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
     color: white;
 }
 
-    .form-container h2 {
+    .sticky-note h3 {
+        margin: 0;
+        font-size: 18px;
         color: white;
-        text-align: center;
-        margin-bottom: 20px;
     }
 
-    .form-container label {
+    .sticky-note p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #ecf0f1;
+    }
+
+    .sticky-note small {
         display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
+        text-align: right;
+        font-size: 12px;
+        color: #bdc3c7;
     }
 
-    .form-container input, .form-container textarea {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 16px;
-        border: none;
-        border-radius: 4px;
-        background-color: white;
-        color: black;
+
+    .sticky-note .btn-link {
+        margin-right: 10px;
+        color: #3498db;
+        text-decoration: none;
     }
 
-    .form-container button {
-        width: 100%;
-        padding: 10px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-        .form-container button:hover {
-            background-color: #45a049;
+        .sticky-note .btn-link:hover {
+            color: #2980b9;
         }
 
+    button {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    }
 
-.sticky-note {
-    background-color: #f9f9c6;
-    padding: 15px;
-    margin: 10px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    width: 200px;
-    display: inline-block;
+    button:hover {
+        background-color: #1f6d8c;
+    }
+
+
+.sticky-note-input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #34495e;
+    color: white;
+    border: 1px solid #2c3e50;
+}
+
+.sticky-note-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #34495e;
+    color: white;
+    border: 1px solid #2c3e50;
+    resize: vertical;
 }
