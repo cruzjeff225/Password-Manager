@@ -49,13 +49,13 @@ namespace Capa_Datos
             }
         }
 
-        public bool actualizarCredenciales (string Plataforma, string Usuario, string Contraseña)
+        public bool actualizarCredenciales (int idCredencial, string Plataforma, string Usuario, string Contraseña)
         {
             using (SqlConnection con = new SqlConnection(conexionString)) 
             { 
                 con.Open();
 
-                using (SqlCommand cmd = new SqlCommand("UPDATE Credenciales SET Plataforma = @Plataforma, Usuario = @Usuario, Contraseña = @Contraseña WHERE Usuario = @Usuario", con))
+                using (SqlCommand cmd = new SqlCommand("UPDATE Credenciales SET Plataforma = @Plataforma, Usuario = @Usuario, Contraseña = @Contraseña WHERE idCredencial = @idCredencial", con))
                 {
                     cmd.Parameters.AddWithValue("@Plataforma", Plataforma);
                     cmd.Parameters.AddWithValue("@Usuario", Usuario);

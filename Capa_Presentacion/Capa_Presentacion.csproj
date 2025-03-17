@@ -69,10 +69,12 @@
   <ItemGroup>
     <Content Include="Content\styles.css" />
     <Content Include="Content\stylesGlobals.css" />
+    <Content Include="Content\stylesGv.css" />
     <Content Include="Content\stylesPlatform.css" />
     <Content Include="Credenciales.aspx" />
     <Content Include="Global.asax" />
     <Content Include="newNote.aspx" />
+    <Content Include="verCredenciales.aspx" />
     <Content Include="Web.config" />
     <Content Include="RegistroCredenciales.aspx" />
   </ItemGroup>
@@ -101,6 +103,13 @@
     </Compile>
     <Compile Include="RegistroCredenciales.aspx.designer.cs">
       <DependentUpon>RegistroCredenciales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="verCredenciales.aspx.cs">
+      <DependentUpon>verCredenciales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="verCredenciales.aspx.designer.cs">
+      <DependentUpon>verCredenciales.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
