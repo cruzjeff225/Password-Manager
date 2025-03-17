@@ -80,11 +80,11 @@ namespace Capa_Presentacion
             {
                 if ((int)row["idNota"] == idNota)
                 {
-                    row["Editando"] = true; // Activar modo edición
+                    row["Editando"] = true;
                 }
                 else
                 {
-                    row["Editando"] = false; // Desactivar modo edición para las demás notas
+                    row["Editando"] = false;
                 }
             }
             repeaterNotas.DataSource = dt;
@@ -97,7 +97,8 @@ namespace Capa_Presentacion
 
             if (NegocioNotas.actualizarNota(idNota, Titulo, Descripcion, DateTime.Now))
             {
-                CargarNotas(); // Recargar las notas después de guardar
+                Response.Write("<script>alert('Nota actualizada con exito')</script>");
+                CargarNotas();
             }
             else
             {
@@ -114,7 +115,7 @@ namespace Capa_Presentacion
             {
                 if ((int)row["idNota"] == idNota)
                 {
-                    row["Editando"] = false; // Desactivar modo edición
+                    row["Editando"] = false;
                 }
             }
             repeaterNotas.DataSource = dt;
@@ -125,11 +126,11 @@ namespace Capa_Presentacion
         {
             if (NegocioNotas.eliminarNota(idNota))
             {
-                CargarNotas(); // Recargar las notas después de eliminar
+                CargarNotas();
             }
             else
             {
-                // Mostrar mensaje de error
+                Response.Write("<script>alert('Error al eliminar la nota')</script>");
             }
         }
 
