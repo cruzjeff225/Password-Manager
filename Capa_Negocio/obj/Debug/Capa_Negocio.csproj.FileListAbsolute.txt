@@ -16,3 +16,12 @@ C:\Users\Jefferson Cruz\Password-Manager\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
 C:\Users\Jefferson Cruz\Password-Manager\Capa_Negocio\bin\Debug\Capa_Datos.dll
 C:\Users\Jefferson Cruz\Password-Manager\Capa_Negocio\bin\Debug\Capa_Datos.pdb
 C:\Users\Jefferson Cruz\Password-Manager\Capa_Negocio\obj\Debug\Capa_Neg.64FC8661.Up2Date
+C:\Users\Jefferson Cruz\Source\Repos\Password-Manager\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\Jefferson Cruz\Source\Repos\Password-Manager\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\Jefferson Cruz\Source\Repos\Password-Manager\Capa_Negocio\bin\Debug\Capa_Datos.dll
+C:\Users\Jefferson Cruz\Source\Repos\Password-Manager\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+C:\Users\Jefferson Cruz\Source\Repos\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+C:\Users\Jefferson Cruz\Source\Repos\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Jefferson Cruz\Source\Repos\Password-Manager\Capa_Negocio\obj\Debug\Capa_Neg.64FC8661.Up2Date
+C:\Users\Jefferson Cruz\Source\Repos\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\Jefferson Cruz\Source\Repos\Password-Manager\Capa_Negocio\obj\Debug\Capa_Negocio.pdb

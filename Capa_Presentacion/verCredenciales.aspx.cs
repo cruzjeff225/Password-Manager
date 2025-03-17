@@ -45,8 +45,35 @@ namespace Capa_Presentacion
             if (NegocioCredenciales.actualizarCredenciales(idCredencial,Plataforma, Usuario, Contraseña))
             {
                 gvCredenciales.EditIndex = -1;
+                Response.Write("<script>alert(Plataforma actualizada con éxito!');</script>");
                 cargarCredenciales();
             }
+            else
+            {
+                Response.Write("<script>alert(Error al actualizar plataforma!');</script>");
+            }
+        }
+
+        protected void gvCredenciales_RowDeleting(object sender, System.Web.UI.WebControls.GridViewDeleteEventArgs e)
+        {
+            int idCredencial= Convert.ToInt32(gvCredenciales.DataKeys[e.RowIndex].Value);
+
+            if (NegocioCredenciales.eliminarCredenciales(idCredencial))
+            {
+                Response.Write("<script>alert(Plataforma eliminada con éxito!');</script>");
+                cargarCredenciales();
+            }
+            else
+            {
+                Response.Write("<script>alert(Error al eliminar plataforma!');</script>");
+            }
+        }
+
+
+        protected void gvCredenciales_RowCancelingEdit(object sender, System.Web.UI.WebControls.GridViewCancelEditEventArgs e)
+        {
+            gvCredenciales.EditIndex = -1;
+            cargarCredenciales();
         }
     }
 }
