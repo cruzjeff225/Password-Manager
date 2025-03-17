@@ -1,5 +1,4 @@
-﻿/* Estilos del formulario */
-.form-container {
+﻿.form-container {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
@@ -43,3 +42,14 @@
         .form-container button:hover {
             background-color: #45a049;
         }
+
+
+.sticky-note {
+    background-color: #f9f9c6;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    width: 200px;
+    display: inline-block;
+}
