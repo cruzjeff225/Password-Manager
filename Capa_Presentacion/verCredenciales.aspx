@@ -14,18 +14,22 @@
     <form id="form1" runat="server">
         <div class="sidebar">
             <h4>Password Manager</h4>
-            <a href="#"><i class="fas fa-plus-circle"></i>Agregar cuenta</a>
-            <a href="#"><i class="fas fa-user"></i>Mis cuentas</a>
-            <a href="#" class="active"><i class="fas fa-sticky-note"></i>Notas</a>
+            <a href="RegistroCredenciales.aspx"><i class="fas fa-plus-circle"></i>Agregar cuenta</a>
+            <a href="#" class="active"><i class="fas fa-user"></i>Mis cuentas</a>
+            <a href="newNote.aspx"><i class="fas fa-sticky-note"></i>Notas</a>
             <a href="#"><i class="fas fa-credit-card"></i>Tarjetas de crédito - débito</a>
             <a href="#"><i class="fas fa-cog"></i>Configuración</a>
         </div>
         <div class="content">
             <h2>Mis Credenciales</h2>
             <asp:GridView ID="gvCredenciales" runat="server" AutoGenerateColumns="false" CssClass="table table-hover"
-               OnRowEditing="gvCredenciales_RowEditing"
-                OnRowUpdating="gvCredenciales_RowUpdating">
+               DataKeyNames="idCredencial"
+                OnRowEditing="gvCredenciales_RowEditing"
+                OnRowUpdating="gvCredenciales_RowUpdating"
+                OnRowCancelingEdit="gvCredenciales_RowCancelingEdit"
+                OnRowDeleting="gvCredenciales_RowDeleting">
                 <Columns>
+                    <asp:BoundField DataField="idCredencial" HeaderText="# Plataforma" />
                     <asp:BoundField DataField="Plataforma" HeaderText="Plataforma" />
                     <asp:BoundField DataField="Usuario" HeaderText="Usuario" />
                     <asp:BoundField DataField="Contraseña" HeaderText="Contraseña" />

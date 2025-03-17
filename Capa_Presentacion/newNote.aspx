@@ -14,8 +14,8 @@
     <form id="form1" runat="server">
         <div class="sidebar">
             <h4>Password Manager</h4>
-            <a href="#"><i class="fas fa-plus-circle"></i>Agregar cuenta</a>
-            <a href="#"><i class="fas fa-user"></i>Mis cuentas</a>
+            <a href="RegistroCredenciales.aspx"><i class="fas fa-plus-circle"></i>Agregar cuenta</a>
+            <a href="verCredenciales.aspx"><i class="fas fa-user"></i>Mis cuentas</a>
             <a href="#" class="active"><i class="fas fa-sticky-note"></i>Notas</a>
             <a href="#"><i class="fas fa-credit-card"></i>Tarjetas de crédito - débito</a>
             <a href="#"><i class="fas fa-cog"></i>Configuración</a>
@@ -25,7 +25,7 @@
                 <h2>📝 Agregar Nueva Nota </h2>
                 <form>
                     <label for="noteTitle">Título</label>
-                    <asp:TextBox ID="txtTitulo" runat="server" CssClass="input"></asp:TextBox>
+                    <asp:TextBox ID="txtTitulo" runat="server" CssClass="input" OnTextChanged="txtTitulo_TextChanged"></asp:TextBox>
 
                     <label for="noteDescription">Descripción</label>
                     <asp:TextBox ID="txtDescripcion" runat="server" CssClass="input"></asp:TextBox>

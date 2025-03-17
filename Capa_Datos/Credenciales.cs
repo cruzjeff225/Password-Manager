@@ -57,6 +57,7 @@ namespace Capa_Datos
 
                 using (SqlCommand cmd = new SqlCommand("UPDATE Credenciales SET Plataforma = @Plataforma, Usuario = @Usuario, Contraseña = @Contraseña WHERE idCredencial = @idCredencial", con))
                 {
+                    cmd.Parameters.AddWithValue("@idCredencial", idCredencial);
                     cmd.Parameters.AddWithValue("@Plataforma", Plataforma);
                     cmd.Parameters.AddWithValue("@Usuario", Usuario);
                     cmd.Parameters.AddWithValue("@Contraseña", Contraseña);

@@ -14,9 +14,9 @@
     <form id="form1" runat="server">
     <div class="sidebar">
         <h4>Password Manager</h4>
-        <a href="#" class="active"><i class="fas fa-plus-circle"></i>Agregar cuenta</a>
-        <a href="#"><i class="fas fa-user"></i>Mis cuentas</a>
-        <a href="#"><i class="fas fa-sticky-note"></i>Notas</a>
+        <a href="RegistroCredenciales.aspx" class="active"><i class="fas fa-plus-circle"></i>Agregar cuenta</a>
+        <a href="verCredenciales.aspx"><i class="fas fa-user"></i>Mis cuentas</a>
+        <a href="newNote.aspx"><i class="fas fa-sticky-note"></i>Notas</a>
         <a href="#"><i class="fas fa-credit-card"></i>Tarjetas de crédito - débito</a>
         <hr>
         <a href="#"><i class="fas fa-cog"></i>Configuración</a>

@@ -67,12 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\styleHome.css" />
     <Content Include="Content\styles.css" />
     <Content Include="Content\stylesGlobals.css" />
     <Content Include="Content\stylesGv.css" />
     <Content Include="Content\stylesPlatform.css" />
     <Content Include="Credenciales.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="index.aspx" />
     <Content Include="newNote.aspx" />
     <Content Include="verCredenciales.aspx" />
     <Content Include="Web.config" />
@@ -88,6 +90,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="newNote.aspx.cs">
       <DependentUpon>newNote.aspx</DependentUpon>

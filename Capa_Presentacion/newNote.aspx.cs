@@ -43,6 +43,7 @@ namespace Capa_Presentacion
 			if(exito)
 			{
 				Response.Write("<script>alert('Nota agregada correctamente')</script>");
+                CargarNotas();
             }
 			else
 			{
@@ -134,5 +135,9 @@ namespace Capa_Presentacion
             }
         }
 
+        protected void txtTitulo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
