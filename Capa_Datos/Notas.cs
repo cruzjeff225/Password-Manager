@@ -21,11 +21,13 @@ namespace Capa_Datos
                 con.Open();
                 using (SqlCommand cmd = new SqlCommand("SELECT * FROM Notas", con))
                 {
-                    SqlDataReader reader = cmd.ExecuteReader();
-                    dt.Load(reader);
+                    using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                    {
+                        da.Fill(dt);
+                    }
                 }
+                return dt;
             }
-            return dt;
         }
 
         public bool insertarNota(string Titulo, string Descripcion, DateTime fechaCreacion)
